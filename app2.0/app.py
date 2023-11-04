@@ -13,13 +13,13 @@ import cv2
 
 
 
-app = Flask(__name__)
-model = load_model('model2.h5')
-target_img = os.path.join(os.getcwd() , 'static/images')
-
-@app.route('/')
-def index_view():
-    return render_template('index.html')
+# app = Flask(__name__)
+# model = load_model('model2.h5')
+# target_img = os.path.join(os.getcwd() , 'static/images')
+#
+# @app.route('/')
+# def index_view():
+#     return render_template('index.html')
 
 # #Allow files with extension png, jpg and jpeg
 # ALLOWED_EXT = set(['jpg' , 'jpeg' , 'png'])
@@ -115,5 +115,11 @@ def index_view():
 
 
 
-if __name__ == '__main__':
-    app.run(debug=True,use_reloader=False, port=8000)
+# if __name__ == '__main__':
+#     app.run(debug=True,use_reloader=False, port=8000)
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "Hello World!"
