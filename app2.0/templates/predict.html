@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAT EMOTION RECOGNITION</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<style>
+  h5 {
+    color: rgb(20, 20, 20);
+  }
+
+  body {
+    background-image: url('../static/cat4.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  Add this section .container {
+    padding: 30px;
+    text-align: center;
+    color: rgb(104, 24, 234);
+    font-weight: 600;
+  }
+
+  h1 {
+    color: rgb(122, 14, 238);
+    text-shadow: 2px 2px black;
+  }
+
+  h4 {
+    color: rgb(20, 20, 20);
+  }
+
+
+  .img-thumbnail {
+    border: 10px solid #230ee4;
+    border-radius: 50%;
+  }
+
+  form {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ccc;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="raw">
+      <center>
+        <h1 style="padding:30px;font-weight: 600 !important;font-size: 3.2em">CAT EMOTION RECOGNITION</h1>
+      </center>
+    </div>
+
+    <div class="raw" style="padding-top:30px">
+      <form>
+        <center>
+          <img src="{{ user_image }}" alt="User Image" class="img-thumbnail" style="border-radius:0;" width="300" height="200">
+          <br>
+          <br>
+          <h4> Cat Emotion:: <mark>{{Emotion}}</mark></h4>
+        </center>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>
