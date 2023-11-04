@@ -8,5 +8,5 @@ def home():
 
 
 @app.route("/about")
-def home():
+def about():
     return "hello"
