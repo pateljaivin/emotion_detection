@@ -111,15 +111,15 @@ import cv2
 #
 #     return result
 
-
-
-
-
-# if __name__ == '__main__':
-#     app.run(debug=True,use_reloader=False, port=8000)
-
 app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
     return "Hello World!"
+
+
+
+if __name__ == '__main__':
+    app.run(debug=True,use_reloader=False, port=3000)
+
+
